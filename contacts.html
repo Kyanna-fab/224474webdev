@@ -3,62 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Contact - Abigail G.</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="index.html#about">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="contacts.html">contacts</a>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">Abigail G.</div>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="gallery.html">Gallery</a>
+                <a class="active" href="contacts.html">Contact</a>
+            </nav>
+        </div>
     </header>
-    <hr>
-    <main>
-        <p>For more info reach out</p>
-        <form action="#" method="POST">
-            <table>
-                <tr>
-                    <td>
-                        <label for="name">Name:</label>
-                    </td>
-                    <td>
-                        <input type="text" id="name" name="name">
-                    </td>
-                    <td>
-                        <label for="tel">Tel NO:</label>
-                    </td>
-                    <td>
-                        <input type="tel" id="tel" name="tel">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="email">Email:</label>
-                    </td>
-                    <td>
-                        <input type="email" id="email" name="email">
-                    </td>
-                    <td>
-                        <label for="message">Message:</label>
-                    </td>
-                    <td>
-                        <textarea id="message" name="message" rows="4" cols="20"></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="4" align="center">
-                        <br>
-                        <input type="submit" value="Submit">
-                    </td>
-                </tr>
-            </table>
-        </form>
+
+    <main class="page-section">
+        <div class="container contact-layout">
+            <section class="contact-card" style="display:flex; flex-direction:column; justify-content:center; min-height:100%;">
+                <h2 class="section-title" style="justify-content: center;">Get in touch</h2>
+                <p>For more information, collaboration requests, or project discussions, feel free to reach out.</p>
+                <p><strong>Email:</strong> abigail@example.com</p>
+                <p><strong>Location:</strong> Nairobi, Kenya</p>
+            </section>
+
+            <section class="form-card">
+                <form action="#" method="POST">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com">
+                    </div>
+                    <div>
+                        <label for="tel">Telephone</label>
+                        <input type="tel" id="tel" name="tel" placeholder="0712 345 678">
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your idea or project"></textarea>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Send Message</button>
+                </form>
+            </section>
+        </div>
     </main>
-    <hr>
-    <footer>
-        <p>[2026] All rights reserved by Abigail G.</p>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Abigail G. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>

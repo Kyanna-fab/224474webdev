@@ -3,81 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Home - Abigail G. Blog & Portfolio</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#about">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="contacts.html">contacts.</a>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">Abigail G.</div>
+            <nav class="main-nav">
+                <a class="active" href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contacts.html">Contact</a>
+            </nav>
+        </div>
     </header>
-    <hr>
-    <main>
-        <section>
-            <h1>Welcome to my blog</h1>
-            <p>Welcome to my online space where I document my journey in technology, business, and software engineering. Below are some of my latest thoughts, updates, and reflections.</p>
-            
-            <h3>Recent Blog Posts</h3>
-            <ul>
-                <li>
-                    <strong><a href="#">My Journey as a 19-Year-Old BBIT Student</a></strong> (June 2026)<br>
-                    A look into how I balance academic studies in Business Information Technology with building real-world projects and starting businesses.
-                </li>
-                <li>
-                    <strong><a href="#">In Coding, There is No End Goal</a></strong> (May 2026)<br>
-                    Reflecting on my coding philosophy: why software engineering is about continuous learning and mastering skills rather than reaching a final destination.
-                </li>
-                <li>
-                    <strong><a href="#">Why I am Majoring in Cybersecurity & Quality Assurance</a></strong> (April 2026)<br>
-                    Exploring the critical importance of secure coding practices and robust QA workflows in today's tech ecosystem.
-                </li>
-            </ul>
-        </section>
-        <hr>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I am <strong>Abigail G.</strong>, a 19-year-old student currently pursuing a degree in <strong>Bachelor of Business Information Technology (BBIT)</strong>. I am passionate about bridging the gap between business operations and technological solutions.</p>
-            
-            <p>My journey in tech began early, and I have since ventured into creating various projects that span both the business and IT sectors. I enjoy the process of turning ideas into functional software, having started multiple businesses and developed several websites and applications.</p>
-            
-            <h3>My Philosophy</h3>
-            <blockquote>
-                <em>"In coding, there is no end goal, but aiming to master the skills that I have already acquired and more."</em>
-            </blockquote>
-            <h3>Future Goals</h3>
-            <p>As I continue to code and build, I plan to specialize in <strong>Cybersecurity</strong> and <strong>Quality Assurance (QA)</strong>. I believe that writing clean, secure, and well-tested code is the foundation of any successful tech project.</p>
-        </section>
-        <hr>
-        <section>
-            <h2>Skills & Technical Stack</h2>
-            <p>Here are the programming languages and frameworks I have learned and worked with:</p>
-            
-            <h4>Programming & Markup Languages</h4>
-            <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>JavaScript</li>
-                <li>Kotlin</li>
-                <li>C</li>
-                <li>C++</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>SQL</li>
-            </ul>
-            <h4>Frameworks & Libraries</h4>
-            <ul>
-                <li>Django (Python web framework)</li>
-                <li>React (JavaScript library for UI)</li>
-            </ul>
-        </section>
+
+    <section class="hero">
+        <div class="container">
+            <div>
+                <h1>Welcome to my blog and portfolio</h1>
+                <p>Welcome to my online space where I document my journey in technology, business, and software engineering. Below are some of my latest thoughts, updates, and reflections.</p>
+                <div class="btn-group">
+                    <a class="btn btn-primary" href="projects.html">View Projects</a>
+                    <a class="btn btn-secondary" href="gallery.html">See Gallery</a>
+                </div>
+            </div>
+            <div class="hero-card profile-card">
+                <img class="profile-image" src="data:image/jpeg;base64,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" alt="Abigail G.">
+                <div>
+                    <h3>What you will find here</h3>
+                    <p>Insights into my studies, entrepreneurial ideas, and the projects I build as I grow into a technology professional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="page-section">
+        <div class="container">
+            <section>
+                <h2 class="section-title">Recent Blog Posts</h2>
+                <div class="grid cards-grid">
+                    <article class="card list-card">
+                        <h3>My Journey as a 19-Year-Old BBIT Student</h3>
+                        <p>A look into how I balance academic studies in Business Information Technology with building real-world projects and starting businesses.</p>
+                    </article>
+                    <article class="card list-card">
+                        <h3>In Coding, There is No End Goal</h3>
+                        <p>Reflecting on my coding philosophy: why software engineering is about continuous learning and mastering skills rather than reaching a final destination.</p>
+                    </article>
+                    <article class="card list-card">
+                        <h3>Why I am Majoring in Cybersecurity &amp; Quality Assurance</h3>
+                        <p>Exploring the critical importance of secure coding practices and robust QA workflows in today's tech ecosystem.</p>
+                    </article>
+                </div>
+            </section>
+        </div>
     </main>
-    <hr>
-    <footer>
-        <p>[2026] All rights reserved by Abigail G.</p>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Abigail G. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
-
